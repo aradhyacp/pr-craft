@@ -8,3 +8,6 @@ node_modules
 dist
 .DS_Store
 *.tsbuildinfo
+
+# Drafts written by pr-craft itself
+PR_MSG.md
