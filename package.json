@@ -1,0 +1,36 @@
+{
+  "name": "prcraft",
+  "version": "0.0.0",
+  "type": "module",
+  "bin": {
+    "pr-craft": "./bin/pr-craft.ts"
+  },
+  "imports": {
+    "#*": "./agent/*",
+    "#evals/*": "./evals/*"
+  },
+  "scripts": {
+    "build": "eve build",
+    "deploy": "eve deploy",
+    "dev": "eve dev",
+    "eval": "eve eval",
+    "pr-craft": "node ./bin/pr-craft.ts",
+    "test": "node --test \"tests/**/*.test.ts\"",
+    "start": "eve start",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^4.0.69",
+    "@vercel/connect": "1.0.0",
+    "ai": "^7.0.93",
+    "eve": "^0.54.4",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "24.x",
+    "typescript": "7.0.2"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
